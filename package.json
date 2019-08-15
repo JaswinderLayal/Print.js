@@ -7,7 +7,9 @@
   "types": "src/index.d.ts",
   "repository": "https://github.com/crabbly/Print.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.4.5",
