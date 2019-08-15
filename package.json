@@ -44,9 +44,9 @@
     "coverage": "open coverage/lcov-report/index.html",
     "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "start": "webpack-dev-server --public http://localhost:8080/test/manual --open",
-    "preinstall": "npm install --save-dev @babel/core @babel/cli",
+    "preinstall": "npm install --save-dev webpack webpack-cli",
     "compile": "babel src --out-dir dist",
-    "postinstall": "npm run compile"
+    "postinstall": "npm run production"
   },
   "author": "Rodrigo Vieira <rodrigo@crabbly.com>",
   "standard": {
