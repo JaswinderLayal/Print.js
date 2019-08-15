@@ -9,7 +9,8 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.4.5",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.4.5",
     "@babel/preset-env": "7.4.5",
     "babel-loader": "8.0.6",
     "coveralls": "3.0.4",
@@ -41,7 +42,8 @@
     "coverage": "open coverage/lcov-report/index.html",
     "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "start": "webpack-dev-server --public http://localhost:8080/test/manual --open",
-    "postinstall": "npm run production"
+    "compile": "babel src --out-dir dist",
+    "postinstall": "npm run compile"
   },
   "author": "Rodrigo Vieira <rodrigo@crabbly.com>",
   "standard": {
